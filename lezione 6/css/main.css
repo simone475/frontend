@@ -117,3 +117,22 @@ nav a{
 .card-group .card h3{
     margin-bottom: .5rem;
 }
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.article.article-inv img{
+    order: 1;
+
+}
+
