@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* con questa pseudo classe posso impostare le palette di colori.
+   per prendere i link per immagini o loghi bisogna andare o su https://fontawesome.com o su https://cdnjs.com 
+   per le immagini invece su logoipsum */
+:root{
+    --primary: #21335f;
+    --secondary: #ff6f00;
+    --text-color: #2a2928;
+    --bg-color: #ffffff;
+}
+
+body{
+    font-family:  "Sirin Stencil", sans-serif;
+    color: var(--text-color);
+}
+
+.container{
+    padding: 1rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 35px;
+}
+
+.social{
+    display: flex; 
+    gap: .5rem;
+}
+
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 162);
+    color: white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .4rem;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;/*con questa regola qui tolgo il pallino ad li*/
+    gap: 1.5rem;  
+}
+
+nav a{
+    color: var(--bg-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+}
+.claim{
+    min-height: 400px;
+    width: 80%;
+    background-image: url('../img/ciliegi_fioriti.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.213);
+    color: var(--bg-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+}
+
+.card-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-group .card h3{
+    margin-bottom: .5rem;
+}
